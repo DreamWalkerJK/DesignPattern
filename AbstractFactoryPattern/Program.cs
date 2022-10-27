@@ -5,6 +5,7 @@ namespace AbstractFactoryPattern
 {
     /// <summary>
     /// 抽象工厂模式：Abstract Factory Pattern
+    /// 指提供一个创建一系列相关或相互依赖对象接口，无需指定它们具体的类
     /// 优点：需要产品族时，可保证始终只有同一个产品族的产品、可拓展性满足开闭原则
     /// 缺点：规定了所有可能被创建的产品集合，产品族中扩展新产品困难
     /// </summary>
