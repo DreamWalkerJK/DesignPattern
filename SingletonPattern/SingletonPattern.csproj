@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5D79FDB9-5A39-4228-89A3-D826D1E2367C}</ProjectGuid>
+    <ProjectGuid>{FCAD267F-7A4C-4F55-A96A-62C0BBAF21BC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AbstractFactoryPattern</RootNamespace>
-    <AssemblyName>AbstractFactoryPattern</AssemblyName>
+    <RootNamespace>SingletonPattern</RootNamespace>
+    <AssemblyName>SingletonPattern</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,21 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Concrete\ProductAFamilyA.cs" />
-    <Compile Include="Concrete\ProductAFamilyB.cs" />
-    <Compile Include="Concrete\ProductBFamilyA.cs" />
-    <Compile Include="Concrete\ProductBFamilyB.cs" />
-    <Compile Include="Factory\FactoryA.cs" />
-    <Compile Include="Factory\FactoryB.cs" />
-    <Compile Include="Interface\IAbstractFactory.cs" />
-    <Compile Include="Interface\IAbstractProductA.cs" />
-    <Compile Include="Interface\IAbstractProductB.cs" />
+    <Compile Include="LazyDoubleSafeSingleton.cs" />
+    <Compile Include="LazySafeSingleton.cs" />
+    <Compile Include="LazySingleton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StandarnSingleton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
